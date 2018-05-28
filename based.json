@@ -1,0 +1,88 @@
+{
+ "chart": {
+  "type": "spline",
+  "zoomType": "xy"
+ },
+ "credits": [
+  {
+   "enabled": true,
+   "href": "https://toplists.github.io/",
+   "position": {
+    "align": "center",
+    "y": -190
+   },
+   "text": "Toplists Study: https://toplists.github.io/"
+  }
+ ],
+ "plotOptions": {
+  "spline": {
+   "marker": {
+    "enabled": true,
+    "radius": 1
+   }
+  }
+ },
+ "series": [
+  {
+   "data": [
+    [
+     1513252800000,
+     265961
+    ],
+    [
+     1513339200000,
+     267175
+    ]
+   ],
+   "name": "Umbrella Top 1M: Count of Unique Base Domains"
+  },
+  {
+   "data": [
+    [
+     1513252800000,
+     976491
+    ],
+    [
+     1513339200000,
+     976425
+    ]
+   ],
+   "name": "Alexa Top 1M: Count of Unique Base Domains"
+  },
+  {
+   "data": [
+    [
+     1513252800000,
+     994571
+    ],
+    [
+     1513339200000,
+     994587
+    ]
+   ],
+   "name": "Majestic Top 1M: Count of Unique Base Domains"
+  }
+ ],
+ "subtitle": "",
+ "title": "Base Domains in Top List",
+ "tooltip": {
+  "headerFormat": "{series.name} ",
+  "pointFormat": "{point.x:%e. %b %Y}: {point.y:.0f} hosts"
+ },
+ "xAxis": {
+  "dateTimeLabelFormats": {
+   "month": "%e. %b %Y",
+   "year": "%Y"
+  },
+  "title": {
+   "text": "Date"
+  },
+  "type": "datetime"
+ },
+ "yAxis": {
+  "min": 0,
+  "title": {
+   "text": "# Domains"
+  }
+ }
+}
