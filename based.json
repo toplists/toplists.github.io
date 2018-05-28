@@ -67,7 +67,7 @@
  "title": "Base Domains in Top List",
  "tooltip": {
   "headerFormat": "{series.name} ",
-  "pointFormat": "{point.x:%e. %b %Y}: {point.y:.0f} hosts"
+  "pointFormat": "{point.x:%e. %b %Y}: {point.y:.0f} Base Domains"
  },
  "xAxis": {
   "dateTimeLabelFormats": {
