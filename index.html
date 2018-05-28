@@ -48,6 +48,16 @@ body {
 <script src="https://www.highcharts.com/media/com_demo/js/highslide.config.js" charset="utf-8"></script>
 <link rel="stylesheet" type="text/css" href="https://www.highcharts.com/media/com_demo/css/highslide.css" />
 
+
+<script>
+	// Get the CSV and create the chart
+	$.getJSON('based.json', function (chart) {
+		Highcharts.chart('plot', chart);
+	});
+
+</script>
+
+
 </head>
 
 <body>
@@ -122,6 +132,10 @@ Our paper has not yet been published.  <a href="https://dl.acm.org/TODO">Link</a
 Initial submission was TODO, acceptance TODO, and publication TODO.
 -->
 
+<h2>Live Plots</h2>
+<div id="plot" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
 <h2 id="archive">Data Archive</h2>
 
 All raw data can be downloaded <a href="http://toplists.net.in.tum.de/archive">from our archive server</a>.
@@ -140,7 +154,12 @@ All raw data can be downloaded <a href="http://toplists.net.in.tum.de/archive">f
 </p>
 -->
 
-<h2 id="partner">Partner</h2>
+<h2 id="partner">Partners and Measurement Data</h2>
+Internet Measurement data for this study is based on 
+RWTH Aachen's <a href="https://netray.io/"> NetRay project</a> 
+and
+<a href="https://net.in.tum.de/projects/gino/">TUM's GINO project</a>.
+<br><br>
 	<div class="row">
 		<div class="col-lg-3" align="center" style="padding: 8px">
 			<a href="https://in.tum.de">
