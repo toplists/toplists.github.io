@@ -1,0 +1,47 @@
+{
+ "chart": {
+  "type": "spline",
+  "zoomType": "xy"
+ },
+ "credits": [
+  {
+   "enabled": true,
+   "href": "https://toplists.github.io/",
+   "position": {
+    "align": "center",
+    "y": -190
+   },
+   "text": "Toplists Study: https://toplists.github.io/"
+  }
+ ],
+ "plotOptions": {
+  "spline": {
+   "marker": {
+    "enabled": true,
+    "radius": 1
+   }
+  }
+ },
+ "subtitle": "",
+ "title": "Changing Domains per Top Lists",
+ "tooltip": {
+  "headerFormat": "{series.name} ",
+  "pointFormat": "{point.x:%e. %b %Y}: {point.y:.0f} domains"
+ },
+ "xAxis": {
+  "dateTimeLabelFormats": {
+   "month": "%e. %b %Y",
+   "year": "%Y"
+  },
+  "title": {
+   "text": "Date"
+  },
+  "type": "datetime"
+ },
+ "yAxis": {
+  "min": 0,
+  "title": {
+   "text": "# Domains"
+  }
+ }
+}
