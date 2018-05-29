@@ -51,11 +51,14 @@ body {
 
 <script>
 	// Get the CSV and create the chart
-	$.getJSON('based.json', function (chart) {
-		Highcharts.chart('plot', chart);
-	});
+	//$.getJSON('based.json', function (chart) {
+	//	Highcharts.chart('plot', chart);
+	//});
   $.getJSON('corr.json', function (chart) {
 		Highcharts.chart('plotcorr', chart);
+	});
+  $.getJSON('daytoday.json', function (chart) {
+		Highcharts.chart('plotdaytoday', chart);
 	});
 
 </script>
@@ -122,9 +125,10 @@ Initial submission was TODO, acceptance TODO, and publication TODO.
 <h2>Live Plots</h2>
 <h3>Intersecting Base Domains betwen Lists</h3>
 <div id="plotcorr" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-<h3>Share of Base Domains in Lists</h3>
-<div id="plot" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-
+<!--<h3>Share of Base Domains in Lists</h3>
+<div id="plot" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
+<h3>Day-to-Day Changes per List</h3>
+<div id="plotdaytoday" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 <h2 id="archive">Data Archive</h2>
 
