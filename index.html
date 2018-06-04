@@ -37,15 +37,6 @@ body {
   font-size: 16pt;
 }
 
-/* style.css */
-* {
-   font-size: 16px;
-}
-
-#plots {
-   font-size: 14px;
-}
-
 </style>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -68,7 +59,7 @@ body {
 		Highcharts.chart('plotcorr', chart);
 	});
   $.getJSON('daytoday.json', function (chart) {
-		Highcharts.chart('plotdaytoday', chart);
+    Highcharts.chart('plotdaytoday', chart);
 	});
 
 </script>
@@ -113,7 +104,7 @@ body {
         <div class="page-header">
 
 <h2 id="about">About this Study</h2>
-
+<p style="font-size: 16px">
 A broad range of research areas including Internet measurement, privacy, and network security rely on lists of target domains to be analysed; researchers make use of target lists for reasons of necessity or efficiency.
 The popular Alexa list of one million domains is a widely used example.
 Despite their prevalence in research papers, the soundness of top lists has seldom been questioned by the community: little is known about the lists' creation, representativity, potential biases, stability, or overlap between lists.
@@ -121,12 +112,14 @@ Despite their prevalence in research papers, the soundness of top lists has seld
 In this study we survey the extent, nature, and evolution of top lists used by research communities. We assess the structure and stability of these lists, and show that rank manipulation is possible for some lists.
 We also reproduce the results of several scientific studies to assess the impact of using a top list at all, which list specifically, and the date of list creation. We find that (i) top lists generally overestimate results compared to the general population by a significant margin, often even a magnitude, and (ii) some top lists have surprising change characteristics, causing high day-to-day fluctuation and leading to result instability.
 We conclude our paper with specific recommendations on the use of top lists, and how to interpret results based on top lists with caution.
+</p>
 <br><br>
 <h2 id="download">Paper and Raw Data Download</h2>
+<p style="font-size: 16px">
 You can obtain a preprint of our paper from <a href="https://arxiv.org/abs/1805.11506">arXiv</a>.<br>
 All raw data can be downloaded <a href="http://toplists.net.in.tum.de/archive">from our archive server</a>.<br>
 Please cite this study when using the data.
-
+</p>
 <h2 id="plots">Live Plots</h2>
 <h3>Intersecting Base Domains between Lists</h3>
 <div id="plotcorr" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
@@ -136,7 +129,7 @@ Please cite this study when using the data.
 <div id="plotdaytoday" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 <h2 id="contact">Contact</h2>
-<p>
+<p style="font-size: 16px">
 	<b>scheitle</b> [AT] <b>net.in.tum.de</b>
 </p>
 <p>
@@ -149,10 +142,12 @@ Please cite this study when using the data.
 -->
 
 <h2 id="partner">Partners and Measurement Data</h2>
+<p style="font-size: 16px">
 Internet Measurement data for this study is based on
 RWTH Aachen's <a href="https://netray.io/"> NetRay project</a>
 and
 <a href="https://net.in.tum.de/projects/gino/">TUM's GINO project</a>.
+</p>
 <br><br>
 	<div class="row">
 		<div class="col-lg-3" align="center" style="padding: 8px">
