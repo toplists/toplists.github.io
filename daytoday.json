@@ -1,7 +1,9 @@
 {
  "chart": {
   "type": "spline",
-  "zoomType": "xy"
+  "zoomType": "xy",
+  "panning": true,
+  "panKey": "shift"
  },
  "credits": [
   {
